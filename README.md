@@ -90,14 +90,3 @@ Problems also seem to arise when the input dataset contains values with extreme 
 ###ACKNOWLEDGEMENTS
 
 This work was supported by the EU FP7 projects GLOCAL (FP7-248984) and WeKnowIt (FP7-215453)
-
-##Change log
-
-* Version 1.1   (10/12/2010)
-
-    Video memory allocation is checked, producing an error when memory limits are exceeded.
-    Updated source code is now provided
-
-* Version 1.0   (23/11/2010)
-
-    First release of the GPU-Accelerated LIBSVM in Windows 32/64 bit
