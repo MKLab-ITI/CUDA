@@ -1,0 +1,66 @@
+GPU-Accelerated LIBSVM is exploiting the GPU, using the CUDA interface, to
+speed-up the training process. This package contains a new executable for 
+training classifiers "svm-train-gpu.exe" together with the original one.
+The use of the new executable is exactly the same as with the original one.
+
+
+
+FEATURES
+
+Mode Supported
+
+    * c-svc classification with RBF kernel
+
+Functionality / User interface
+
+    * Same as LIBSVM
+
+
+PREREQUISITES
+
+    * NVIDIA Graphics card with CUDA support
+    * Latest NVIDIA drivers for GPU
+    * CUDA toolkit & GPU Computing SDK 5.5 
+
+    Download all in one package from:    
+	https://developer.nvidia.com/cuda-downloads
+	
+
+INSTRUCTIONS
+
+	1. Install the NVIDIA drivers, CUDA toolkit and GPU Computing SDK code samples. You can find them all in one package here: 
+
+	https://developer.nvidia.com/cuda-downloads (Version 5.5)
+
+	You may need some additional packets to be installed in order to complete the installation above. 
+
+	A very helpful and descriptive guide is on the CUDA webpage: 
+
+	http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/index.html
+
+	Make sure you have followed every step that is relevant to your system, like declaring $PATH and $LD_LIBRARY_PATH on your bash configuration file.
+
+	2. Copy this folder anywhere you like.
+
+	3. Use the Makefile found inside this folder.
+
+	4. Find the "svm-train-gpu" executable inside this folder.
+
+
+Troubleshooting
+
+	1. Nearly all problems are resolved by reading carefully through the nvidia guidelines.
+
+	2. When making, there is a chance a "cannot find cublas_v2.h" or "cuda_runtime.h" error to arise. Find where these files are located (Default path is: "/usr/local/cuda-5.5/include") and replace the paths on the header files in "kernel_matrix_calculation.c" file with your system paths. Also you can change the location of the default CUDA toolkit path on the makefile (CUDA_PATH ?= "/usr/local/cuda-5.5") to your cuda toolkit path.
+
+
+
+Additional Information
+======================
+
+	If you find GPU-Accelerated LIBSVM helpful, please cite it as
+
+	A. Athanasopoulos, A. Dimou, V. Mezaris, I. Kompatsiaris, "GPU Acceleration for Support Vector Machines",
+	Proc. 12th International Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS 2011), Delft, The Netherlands, April 2011.
+
+	Software available at http://mklab.iti.gr/project/GPU-LIBSVM

@@ -1,0 +1,34 @@
+GPU-Accelerated LIBSVM is exploiting the GPU, using the CUDA interface, to
+speed-up the training process. This package contains a new executable for 
+training classifiers "svm-train-gpu.exe" together with the original one.
+The use of the new executable is exactly the same as with the original one.
+
+This executable was built with the CUBLAS API version 2 which is compatible with SDKs from 4.0 and up.
+
+To test the executable "svm-train-gpu" you can run the easy.py script which is located in the "tools" folder.
+
+FEATURES
+
+Mode Supported
+
+    * c-svc classification with RBF kernel
+
+Functionality / User interface
+
+    * Same as LIBSVM
+
+
+PREREQUISITES
+
+    * NVIDIA Graphics card with CUDA support
+    * Latest NVIDIA drivers for GPU
+
+Additional Information
+======================
+
+If you find GPU-Accelerated LIBSVM helpful, please cite it as
+
+A. Athanasopoulos, A. Dimou, V. Mezaris, I. Kompatsiaris, "GPU Acceleration for Support Vector Machines",
+Proc. 12th International Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS 2011), Delft, The Netherlands, April 2011.
+
+Software available at http://mklab.iti.gr/project/GPU-LIBSVM

@@ -6,6 +6,14 @@ GPU-accelerated LIBSVM is a modification of the [original LIBSVM](http://www.csi
 
 Watch a [short video](http://www.youtube.com/watch?v=Fl99tQQd55U) on the capabilities of the GPU-accelerated LIBSVM package
 
+###CHANGELOG
+	
+V1.2 
+	
+	Updated to LIBSVM version 3.17
+	Updated to CUDA SDK v5.5
+	Using CUBLAS_V2 which is compatible with the CUDA SDK v4.0 and up.
+
 ###FEATURES
 
 Mode Supported
@@ -21,7 +29,7 @@ Functionality / User interface
     LIBSVM prerequisites
     NVIDIA Graphics card with CUDA support
     Latest NVIDIA drivers for GPU
-
+	
 ###PERFORMANCE COMPARISON
 
 To showcase the performance gain using the GPU-accelerated LIBSVM we present an example run.
@@ -71,7 +79,7 @@ We are interested in porting our imlementation in Matlab but due to our workload
 
 * Visual Studio will not let me build the provided project.
 
-The project has been built in both 32/64 bit mode. If you are working on 32 bits, you might need the x64 compiler for Visual Studio 2008 to build the project.
+The project has been built in both 32/64 bit mode. If you are working on 32 bits, you might need the x64 compiler for Visual Studio 2010 to build the project.
 
 * Building the project, I get linker error messages.
 
@@ -80,7 +88,7 @@ Please go to the project properties and check the library settings. CUDA librari
 * I have built the project but the executables will not run (The application has failed to start because its side-by-side configuration is in
 correct.)
 
-Please update the VS2008 redistributables to the PC you are running your executable and install all the latest patches for visual studio.
+Please update the VS2010 redistributables to the PC you are running your executable and install all the latest patches for visual studio.
 
 * My GPU-accelerated LIBSVM is running smoothly but i do not see any speed-up.
 
