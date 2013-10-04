@@ -6,6 +6,7 @@ The use of the new executable is exactly the same as with the original one.
 This executable was built with the CUBLAS API version 2 which is compatible with SDKs from 4.0 and up.
 
 To test the executable "svm-train-gpu" you can run the easy.py script which is located in the "tools" folder.
+To observe speed improvements between CPU and GPU execution we provide a custom relatively large dataset (train_set) which can be used as an input to easy.py.
 
 FEATURES
 
