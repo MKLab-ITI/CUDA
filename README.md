@@ -14,7 +14,7 @@ V1.2
 	Updated to CUDA SDK v5.5
 	Using CUBLAS_V2 which is compatible with the CUDA SDK v4.0 and up.
 
-###FEATURES
+### FEATURES
 
 Mode Supported
 
@@ -24,13 +24,13 @@ Functionality / User interface
 
     Same as LIBSVM
 
-###PREREQUISITES
+### PREREQUISITES
 
     LIBSVM prerequisites
     NVIDIA Graphics card with CUDA support
     Latest NVIDIA drivers for GPU
 	
-###PERFORMANCE COMPARISON
+### PERFORMANCE COMPARISON
 
 To showcase the performance gain using the GPU-accelerated LIBSVM we present an example run.
 
@@ -61,17 +61,17 @@ Discussion
     Please take into consideration input data size limitations that can occur from the memory 
     capacity of the graphics card that is used.    
     
-###PUBLICATION
+### PUBLICATION
 
 A first document describing some of the work related to the GPU-Accelerated LIBSVM is the following; please cite it if you find this implementation useful in your work:
 
 A. Athanasopoulos, A. Dimou, V. Mezaris, I. Kompatsiaris, "GPU Acceleration for Support Vector Machines", Proc. 12th International Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS 2011), Delft, The Netherlands, April 2011.
 
-###LICENSE
+### LICENSE
 
 THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-###FREQUENTLY ASKED QUESTIONS (FAQ)
+### FREQUENTLY ASKED QUESTIONS (FAQ)
 
 * Is there a GPU-accelerated LIBSVM version for Matlab?
 
@@ -95,6 +95,6 @@ Please update the VS2010 redistributables to the PC you are running your executa
 GPU-accelerated LIBSVM is giving speed-ups mainly for big datasets. In the GPU-accelerated implementation some extra time is needed to load the data to the gpu memory. If the dataset is not big enough to give a significant performance gain, the gain is lost due to the gpu-memory -> cpu-memory, cpu-memory -> gpu-memory  transfer time. Please refer to the graph above to have a better understanding of the performance gain for different dataset sizes.
 Problems also seem to arise when the input dataset contains values with extreme differences (e.g. 107) if no scaling is performed. Such an example is the "breast-cancer" dataset provided in the official LIBSVM page.
 
-###ACKNOWLEDGEMENTS
+### ACKNOWLEDGEMENTS
 
 This work was supported by the EU FP7 projects GLOCAL (FP7-248984) and WeKnowIt (FP7-215453)
